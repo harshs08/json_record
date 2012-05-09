@@ -11,7 +11,7 @@ module JsonRecord
       @attributes = nil
       json_column = record.class.columns_hash[@name]
       raise ArgumentError.new("column #{name} does not exist in #{table_name}") unless json_column
-      @compressed = json_column.type == :binary
+#      @compressed = json_column.type == :binary
     end
     
     def serialize
